@@ -6,6 +6,7 @@ import Oscar from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonsList } from './components/PersonList';
 import { Status } from './components/Status'
+import { Container } from './components/Container';
 
 
 
@@ -41,6 +42,8 @@ function App() {
         alert (`Button: ${id}`)
         console.warn(event,id)
       } }  buttonText='Alert'/>
+
+      <Container styles= { {border: '1px solid red', margin: '20px 0', padding: '10px' }} />
     </div>
   );
 }
