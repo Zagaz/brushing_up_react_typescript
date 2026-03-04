@@ -1,4 +1,5 @@
 import './App.css';
+import Button from './components/Button';
 import { Greet } from './components/Greet';
 import Heading from './components/Heading';
 import Oscar from './components/Oscar';
@@ -35,10 +36,11 @@ function App() {
           John Doe
         </Heading>
       </Oscar>
-      <Greet name='Picard'  isLoggedIn={true} />
-
-
-
+      <Greet name='Picard' isLoggedIn={true} />
+      <Button handleClick={ (event,id) =>{
+        alert (`Button: ${id}`)
+        console.warn(event,id)
+      } }  buttonText='Alert'/>
     </div>
   );
 }
