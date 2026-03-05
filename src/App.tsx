@@ -7,7 +7,7 @@ import { Person } from './components/Person';
 import { PersonsList } from './components/PersonList';
 import { Status } from './components/Status'
 import { Container } from './components/Container';
-
+import { Input } from './components/Input'
 
 
 
@@ -44,6 +44,16 @@ function App() {
       } }  buttonText='Alert'/>
 
       <Container styles= { {border: '1px solid red', margin: '20px 0', padding: '10px' }} />
+      <Input value ='CTA' handleClick={(event,id)=>{
+        alert(
+          `Input: ${id}`
+        )
+      }}/>
+    
+    
+    
+    
+    
     </div>
   );
 }
